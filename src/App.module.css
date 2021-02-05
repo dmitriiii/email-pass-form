@@ -2,25 +2,27 @@
 	width: 100%;
 	max-width: 500px;
 	margin: 20px auto 40px;
-	padding: 20px;
+	padding: 20px 20px 10px;
 	background-color: #428bca;
 	color: #fff;
 	text-align: center;
 	box-sizing: border-box;
 	font-size: 15px;
+	box-shadow: 0 0 10px #999;
 }
 .title{
-	margin: 0px auto 10px;
+	margin: 0px auto 20px;
 	font-size: 17px;
+	color: #fff;
 }
 
 
 
 /*Start radios ############# */
 .radios{
-	margin: 0 auto 10px;
+	margin: 0 auto 15px;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 .label {
@@ -28,7 +30,7 @@
   position: relative;
   padding-left: 25px;
 	margin-bottom: 12px;
-	margin: 0 10px;
+	margin: 0 15px 0 0;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -54,7 +56,8 @@
   height: 20px;
   width: 20px;
   background-color: #eee;
-  border-radius: 50%;
+	border-radius: 50%;
+	transition: all .2s ease;
 }
 
 /* On mouse-over, add a grey background color */
@@ -103,30 +106,63 @@
 	color:#fff;
 	padding: 0 10px;
 	width: 100%;
+	transition: all .2s ease;
 }
-
+.input_box input:focus{
+	background-color: #fff;
+	color: #222;
+}
 .input_box button{
 	color: #fff;
-	background-color: #3c9;
-	border: none;
+	background-color: transparent;
+	border: 2px solid #3c9;
 	cursor: pointer;
 	padding: 5px 20px;
 	margin-left: 15px;
+	transition: all .2s ease;
 }
 
+.input_box button:hover {
+	background-color: #3c9;
+}
 .message_box{
 	margin: 0 auto 15px;
 	/* padding: 5px 0; */
 }
 
+.footer{
+	margin-top: 20px;
+	color: #ccc;
+	font-weight: bold;
+}
+.footer a{
+	color: #fff;
+	text-decoration: underline;
+}
 /* .msg_normal{
 
-}
-
-.msg_error{
-	color: red;
-}
-
-.msg_success{
-	color: green;
 } */
+
+.error{
+	background-color: #e43f5a;
+	color: #fff;
+	padding: 6px;
+	font-size: 13px;
+}
+
+.success{
+	background-color:#3c9;
+	color: #fff;
+	padding: 6px;
+	font-size: 13px;
+} 
+
+.success span{
+	display: inline-block;
+	padding: 2px 4px;
+	background-color: #eee;
+	color: #e43f5a;
+	margin: 5px;
+	font-weight: bold;
+	/* font-size: 11px; */
+}
