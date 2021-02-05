@@ -71,7 +71,7 @@ class App extends React.Component {
     };
     
     Axios.post( 
-      'http://api.pro24web.site/api/account',
+      'https://api.pro24web.site/api/account',
       bodyParameters,
       config
     ).then(function(res){
