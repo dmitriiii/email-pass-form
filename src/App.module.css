@@ -133,14 +133,14 @@
 .input_box input{
 	border: 2px solid #fff;
 	background-color: #fff;
-	color:#333;
+	color:#333 !important;
 	padding: 0 10px;
 	width: 100%;
 	transition: all .2s ease;
 }
 .input_box input:focus{
 	background-color: transparent;
-	color: #fff;
+	color: #fff !important;
 }
 .input_box button{
 	color: #fff !important;
@@ -195,7 +195,7 @@
 	display: inline-block;
 	padding: 2px 4px;
 	background-color: #eee;
-	color: #e43f5a;
+	color: #e43f5a !important;
 	margin: 5px;
 	font-weight: bold;
 	text-shadow: none;
