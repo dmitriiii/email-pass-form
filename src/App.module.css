@@ -138,6 +138,21 @@
 	width: 100%;
 	transition: all .2s ease;
 }
+
+.input_box input::placeholder {
+	color: #ccc;
+	opacity: 1; /* Firefox */
+}
+  
+.input_box input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #ccc;
+}
+  
+.input_box input::-ms-input-placeholder { /* Microsoft Edge */
+	color: #ccc;
+}
+
+
 .input_box input:focus{
 	background-color: transparent;
 	color: #fff !important;
